@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深圳天气预报</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌤️ 深圳天气预报</h1>
+            <p class="subtitle">未来15天天气查询</p>
+        </header>
+
+        <div class="current-weather">
+            <div class="location">
+                <span class="city-name">深圳市</span>
+                <span class="update-time" id="updateTime">加载中...</span>
+            </div>
+            <div class="weather-main">
+                <div class="temp-display">
+                    <span class="temperature" id="currentTemp">--</span>
+                    <span class="unit">°C</span>
+                </div>
+                <div class="weather-info">
+                    <p class="weather-desc" id="weatherDesc">加载中...</p>
+                    <div class="weather-details">
+                        <div class="detail">
+                            <span class="label">湿度</span>
+                            <span class="value" id="humidity">--</span>
+                        </div>
+                        <div class="detail">
+                            <span class="label">风速</span>
+                            <span class="value" id="windSpeed">--</span>
+                        </div>
+                        <div class="detail">
+                            <span class="label">气压</span>
+                            <span class="value" id="pressure">--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast-section">
+            <h2>15天天气预报</h2>
+            <div class="forecast-container" id="forecastContainer">
+                <div class="loading">加载中...</div>
+            </div>
+        </div>
+
+        <footer>
+            <p>数据来源: OpenWeatherMap API</p>
+            <p>最后更新: <span id="lastUpdate">--</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
